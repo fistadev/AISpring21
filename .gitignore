@@ -137,3 +137,13 @@ M4 - Feature Engineering/D3 - Numerical Enc/2. Notebooks/tabular-playground-feb2
 M4 - Feature Engineering/D3 - Numerical Enc/2. Notebooks/tabular-playground-feb21/test.csv
 M4 - Feature Engineering/D3 - Numerical Enc/2. Notebooks/tabular-playground-feb21/train.csv
 M4 - Feature Engineering/D6 - FeatSel & DimRed/oct2015_1.csv
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/train-labels-idx1-ubyte.gz
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/train-labels-idx1-ubyte
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/train-images-idx3-ubyte.gz
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/train-images-idx3-ubyte
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/t10k-labels-idx1-ubyte
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/t10k-images-idx3-ubyte.gz
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/t10k-images-idx3-ubyte
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/processed/training.pt
+M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/processed/test.pt
