@@ -147,3 +147,13 @@ M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/t10k-images-idx3-ubyte.gz
 M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/raw/t10k-images-idx3-ubyte
 M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/processed/training.pt
 M5 - Deep Learning/D3 - MNIST/MNIST_data/MNIST/processed/test.pt
+MNIST_data/MNIST/processed/test.pt
+MNIST_data/MNIST/processed/training.pt
+MNIST_data/MNIST/raw/t10k-images-idx3-ubyte
+MNIST_data/MNIST/raw/t10k-images-idx3-ubyte.gz
+MNIST_data/MNIST/raw/t10k-labels-idx1-ubyte
+MNIST_data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+MNIST_data/MNIST/raw/train-images-idx3-ubyte
+MNIST_data/MNIST/raw/train-images-idx3-ubyte.gz
+MNIST_data/MNIST/raw/train-labels-idx1-ubyte
+MNIST_data/MNIST/raw/train-labels-idx1-ubyte.gz
