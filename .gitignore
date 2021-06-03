@@ -25163,3 +25163,49 @@ M5 - Deep Learning/D4/Cat_Dog_data.zip
 
 /Datasets/data-master
 Datasets/data-master.zip
+.DS_Store
+Datasets/predict_future_sales/categories.csv
+Datasets/predict_future_sales/items.csv
+Datasets/predict_future_sales/sales_train.csv
+Datasets/predict_future_sales/sample_submission.csv
+Datasets/predict_future_sales/shops.csv
+Datasets/predict_future_sales/test.csv
+Datasets/Tabular/predict-future-sales/DATA/1. Original data Russian (96Mb)/item_categories.csv
+Datasets/Tabular/predict-future-sales/DATA/1. Original data Russian (96Mb)/items.csv
+Datasets/Tabular/predict-future-sales/DATA/1. Original data Russian (96Mb)/sales_train.csv
+Datasets/Tabular/predict-future-sales/DATA/1. Original data Russian (96Mb)/sample_submission.csv
+Datasets/Tabular/predict-future-sales/DATA/1. Original data Russian (96Mb)/shops.csv
+Datasets/Tabular/predict-future-sales/DATA/1. Original data Russian (96Mb)/test.csv
+Datasets/Tabular/predict-future-sales/DATA/2. Translated data English (1Mb)/item_categories.csv
+Datasets/Tabular/predict-future-sales/DATA/2. Translated data English (1Mb)/items.csv
+Datasets/Tabular/predict-future-sales/DATA/2. Translated data English (1Mb)/shops.csv
+Datasets/Tabular/predict-future-sales/DATA/3. Feature Engeneering/duplicated_items_replacement.pkl
+Datasets/Tabular/predict-future-sales/DATA/3. Feature Engeneering/items.csv
+Datasets/Tabular/predict-future-sales/DATA/3. Feature Engeneering/shops.csv
+Datasets/Tabular/predict-future-sales/DATA/5. Submissions/1_Baseline_oct2015.csv
+Datasets/Tabular/predict-future-sales/EXERCISES/1. Baseline.md
+Datasets/Tabular/predict-future-sales/EXERCISES/2. EDA.md
+Datasets/Tabular/predict-future-sales/EXERCISES/4. FE Shops .md
+Datasets/Tabular/predict-future-sales/NOTEBOOKS/1.  Baseline.ipynb
+Datasets/Tabular/predict-future-sales/NOTEBOOKS/2. EDA.ipynb
+Datasets/Tabular/predict-future-sales/NOTEBOOKS/3.1 Feature Engeneering - Shops.ipynb
+Datasets/Tabular/predict-future-sales/NOTEBOOKS/3.2 Feature Engeneering - Item & Category.ipynb
+Datasets/Tabular/predict-future-sales/NOTEBOOKS/3.3 Feature Engeneering - Sales.ipynb
+Datasets/Tabular/predict-future-sales/NOTEBOOKS/4 Solution - ALL.ipynb
+Datasets/Tabular/titanic/gender_submission.csv
+Datasets/Tabular/titanic/test.csv
+Datasets/Tabular/titanic/train.csv
+Datasets/predict_future_sales/categories.csv
+
+/M5 - Deep Learning/Datasets
+M5 - Deep Learning/Datasets
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9997.jpg
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9999.jpg
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9998.jpg
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9997.jpg
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9995.jpg
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9994.jpg
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9993.jpg
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9992.jpg
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9991.jpg
+M5 - Deep Learning/Datasets/Cat_Dog_data/train/dog/dog.9990.jpg
