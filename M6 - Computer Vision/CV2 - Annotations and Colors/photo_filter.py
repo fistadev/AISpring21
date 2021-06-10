@@ -3,30 +3,28 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-print(cv2.__version__)
-
-
-img = cv2.imshow("bokeh.jpg", 0)
-
-# print(img.shape)
-
-# cv2.imshow("Image", img)
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
-# cv2.waitKey(1)
-
-print(type(img))
+# print(cv2.__version__)
 
 
 def imshow(img):
-    plt.figure(figsize=(10, 7))
-    plt.imshow(img, cmap="gray")
+    plt.figure(figsize = (10,7))
+    plt.imshow(img)
+    plt.show()
+
+PATH = "img/bokeh.jpg"
+img = cv2.imread(PATH)
+rgb_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+hsv_img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+# imshow(rgb_img)
 
 
-print(img.shape)
 
-# convert ot RGB
-rgb_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+# print(img.shape)
+#
+# print(type(img))
+
+
+
 
 # print(type(rgb_img))
 
@@ -55,10 +53,23 @@ green = cv2.merge([k, G, k])
 
 
 # filter
-opacity = 0.25
+opacity = 0.35
 img_2w = cv2.addWeighted(green, opacity, rgb_img, 1 - opacity, 0)
+img_2w_k = cv2.addWeighted(img_2w, opacity, rgb_img, 1 - opacity, 0)
 
-imshow(img_2w)
+
+# sharpen
+kernel = np.array([[-1, -1, -1],
+                   [-1, 9, -1],
+                   [-1, -1, -1]])
+img_sharp = cv2.filter2D(img_2w_k, -1, kernel)
+
+# 2nd opacity
+opacity_final = 0.33
+img_final = cv2.addWeighted(img_sharp, opacity_final, img_2w_k, 1 - opacity_final, 0)
+
+imshow(img_final)
+# imshow(img_final)
 
 
 # upload

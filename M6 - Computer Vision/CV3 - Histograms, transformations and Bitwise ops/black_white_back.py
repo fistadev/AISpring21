@@ -7,23 +7,21 @@ import os
 
 
 def imshow(img):
-    plt.figure(figsize = (10,7))
+    plt.figure(figsize=(10, 7))
     plt.imshow(img)
     plt.show()
 
+
 PATH = "img/bokeh.jpg"
 img = cv2.imread(PATH)
-rgb_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-hsv_img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+# rgb_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 # imshow(rgb_img)
-
 
 
 # print(img.shape)
 #
 # print(type(img))
-
-
 
 
 # print(type(rgb_img))
@@ -56,7 +54,6 @@ green = cv2.merge([k, G, k])
 opacity = 0.35
 img_2w = cv2.addWeighted(k, opacity, rgb_img, 1 - opacity, 0)
 img_2w_k = cv2.addWeighted(img_2w, opacity, rgb_img, 1 - opacity, 0)
-
 
 
 imshow(img_2w_k)
