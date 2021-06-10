@@ -11,26 +11,66 @@ def imshow(img):
     plt.imshow(img)
     plt.show()
 
-PATH = "bird.jpg"
+PATH = "img/blue-red-flowers.png"
 img = cv2.imread(PATH)
 rgb_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-hsv_img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+# hsv_img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 # imshow(rgb_img)
 
 
 
-
-# print(img.shape)
-
-
 # green screen
 green_screen = cv2.imread('img/1.jpg')
-rgb_green = cv2.cvtColor(green_screen,cv2.COLOR_BGR2RGB)
-print(rgb_green.shape)
+rgb_green = cv2.cvtColor(green_screen,cv2.COLOR_BGR2HSV)
+# print(rgb_green.shape)
 # imshow(rgb_green)
 
 
-# mask
+green_screen_copy = np.copy(rgb_green)
+image_copy = cv2.cvtColor(green_screen_copy, cv2.COLOR_BGR2RGB)
+# imshow(green_screen_copy)
+
+
+# defining the color threshold
+lower_green = np.array([55, 50, 72]) ##[R value, G value, B value]
+upper_green = np.array([65,255,255])
+
+# Create a mask
+mask = cv2.inRange(green_screen_copy, lower_green, upper_green)
+# plt.imshow(mask, cmap='gray')
+# plt.show()
+
+# make image over mask
+masked_image = np.copy(green_screen_copy)
+masked_image[mask != 0] = [0, 0, 0]
+# imshow(masked_image)
+
+# convert mask to RGB
+masked_image = cv2.cvtColor(masked_image, cv2.COLOR_HSV2RGB)
+
+# Mask and Add Background Image
+background_image = cv2.imread(PATH)
+background_image = cv2.cvtColor(background_image, cv2.COLOR_BGR2RGB)
+
+crop_background = background_image[0:720, 0:1280]
+
+crop_background[mask == 0] = [0, 0, 0]
+
+# imshow(crop_background)
+
+print(masked_image.shape)
+print(background_image.shape)
+
+# final image
+# Only works if both images are the same shape
+# final_image = masked_image + background_image
+# final_image = background_image + masked_image
+# final_image = crop_background + masked_image
+final_image = masked_image + crop_background
+imshow(final_image)
+
+
+
 
 
 
