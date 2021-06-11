@@ -1,5 +1,7 @@
 ## Computer Vision Projects
 
+![](https://soft-cluster.com/wp-content/uploads/2020/11/Computer-Vision.png)
+
 ### Skills learned on Computer Vision
 
 - create poligons and circles over images
