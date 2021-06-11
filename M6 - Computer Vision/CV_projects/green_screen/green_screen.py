@@ -11,7 +11,8 @@ def imshow(img):
     plt.imshow(img)
     plt.show()
 
-PATH = "img/blue-red-flowers.png"
+
+PATH = "img/beach.jpg"
 img = cv2.imread(PATH)
 rgb_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 # hsv_img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
