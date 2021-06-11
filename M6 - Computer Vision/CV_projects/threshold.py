@@ -40,13 +40,13 @@ cv2.namedWindow(window_name, cv2.WINDOW_AUTOSIZE)
 
 
 def change_threshold_value(val):
-    threshold_type = threshold_types[val]
+    threshold_value = val
     ret, thresh = cv2.threshold(gray_img, threshold_value, 255, threshold_type)
     cv2.imshow(window_name, thresh)
 
 
 def change_threshold_type(val):
-    threshold_value = val
+    threshold_type = threshold_types[val]
     ret, thresh = cv2.threshold(gray_img, threshold_type, 255, threshold_type)
     cv2.imshow(window_name, thresh)
 

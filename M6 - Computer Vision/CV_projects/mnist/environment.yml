@@ -1,0 +1,14 @@
+name: deepocr
+channels:
+- !!python/unicode
+  'defaults'
+dependencies:
+- python=3.8.5
+- pip==21.0.1
+- numpy==1.20.2
+- matplotlib==3.3.4
+- pip:
+  - opencv-python==4.5.2.54
+  - opencv-contrib-python==4.5.2.54
+  - tensorflow==2.5.0
+  - keras==2.4.3
