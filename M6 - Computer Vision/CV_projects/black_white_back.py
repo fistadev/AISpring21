@@ -16,7 +16,7 @@ PATH = "img/bokeh.jpg"
 img = cv2.imread(PATH)
 # rgb_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-# imshow(rgb_img)
+imshow(hsv_img)
 
 
 # print(img.shape)
