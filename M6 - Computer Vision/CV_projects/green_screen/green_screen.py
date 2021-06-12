@@ -7,23 +7,23 @@ print(cv2.__version__)
 
 
 def imshow(img):
-    plt.figure(figsize = (10,7))
+    plt.figure(figsize=(10, 7))
     plt.imshow(img)
     plt.show()
 
 
 PATH = "img/beach.jpg"
-img = cv2.imread(PATH)
-rgb_img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+img = cv2.imread(PATH, 1)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 # hsv_img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+print(img.shape)
 # imshow(rgb_img)
 
 
-
 # green screen
-green_screen = cv2.imread('img/1.jpg')
-rgb_green = cv2.cvtColor(green_screen,cv2.COLOR_BGR2HSV)
-# print(rgb_green.shape)
+green_screen = cv2.imread("img/1.jpg", 1)
+rgb_green = cv2.cvtColor(green_screen, cv2.COLOR_BGR2HSV)
+print(rgb_green.shape)
 # imshow(rgb_green)
 
 
@@ -33,8 +33,8 @@ image_copy = cv2.cvtColor(green_screen_copy, cv2.COLOR_BGR2RGB)
 
 
 # defining the color threshold
-lower_green = np.array([55, 50, 72]) ##[R value, G value, B value]
-upper_green = np.array([65,255,255])
+lower_green = np.array([55, 50, 72])  ##[R value, G value, B value]
+upper_green = np.array([65, 255, 255])
 
 # Create a mask
 mask = cv2.inRange(green_screen_copy, lower_green, upper_green)
@@ -69,11 +69,6 @@ print(background_image.shape)
 # final_image = crop_background + masked_image
 final_image = masked_image + crop_background
 imshow(final_image)
-
-
-
-
-
 
 
 # video
