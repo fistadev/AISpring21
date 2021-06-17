@@ -30,8 +30,8 @@ class NNetwork(nn.Module):
     # Defining the layers, 128, 64, 10 units each
     def __init__(self):
         super().__init__()
-        self.fc1 = nn.Linear(784, 16)
-        self.fc2 = nn.Linear(16, 32)
+        self.fc1 = nn.Linear(784, 128)
+        self.fc2 = nn.Linear(128, 32)
         self.fc3 = nn.Linear(32, 8)
         self.fc4 = nn.Linear(8, 10)
 
@@ -49,7 +49,7 @@ class NNetwork(nn.Module):
 
 model = NNetwork()
 # print(model)
-
+# torch summary
 
 # training the network
 
