@@ -3,25 +3,25 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-print('OpenCV: ', cv2.__version__)
+print("OpenCV: ", cv2.__version__)
 
 
 # upload
 
 # fileitem = form['filename']
-
+#
 # # check if the file has been uploaded
 # if fileitem.filename:
 #     # strip the leading path from the file name
 #     fn = os.path.basename(fileitem.filename)
-
+#
 #    # open read and write the file into the server
 #     open(fn, 'wb').write(fileitem.file.read())
 
 
 def imshow(img):
     plt.figure(figsize=(10, 7))
-    plt.imshow(img, cmap='gray')
+    plt.imshow(img, cmap="gray")
     plt.show()
 
 
@@ -33,7 +33,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # imshow(rgb_img)
 
 
-print('img.shape:', img.shape)
+print("img.shape:", img.shape)
 
 print(type(img))
 
@@ -65,13 +65,12 @@ green = cv2.merge([k, G, k])
 
 
 # Dark
-pixel_values = np.ones(img.shape, dtype='uint8') * 50
+pixel_values = np.ones(img.shape, dtype="uint8") * 50
 darker_img = cv2.add(img, pixel_values)
 
 # Bright
-pixel_values = np.ones(img.shape, dtype='uint8') * 200
+pixel_values = np.ones(img.shape, dtype="uint8") * 200
 bright_img = cv2.add(img, pixel_values)
-
 
 
 # red filter
@@ -107,7 +106,6 @@ img_sharp_blue = cv2.filter2D(img_2w_blue, -1, kernel)
 # black&white
 kernel = np.array([[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]])
 img_bw = cv2.filter2D(gray, -1, kernel)
-
 
 
 # 2nd layer
