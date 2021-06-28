@@ -1,0 +1,221 @@
+body, html {
+  margin: 0 auto;
+  /* max-width: 750px; */
+}
+
+
+main {
+    text-align: center;
+    margin: 0;
+    /* max-width: 750px; */
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+
+header a:hover{
+    text-decoration: underline;
+}
+
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #505050;
+}
+
+button {
+    padding: 9px 25px;
+    color: #FFFFFF;
+    background-color:#4c8caf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #50abdc;
+}
+
+footer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 0.8em;
+    position: relative;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+}
+
+
+footer a{
+    color:azure;
+    padding: 1em;
+}
+
+
+footer a:hover{
+    color:rgb(120, 166, 223);
+    
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Garamond', serif;
+    color:rgb(40, 40, 40);
+}
+
+
+h1, h3 {
+    text-align: center;
+}
+
+
+p,
+ol,
+li {
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;
+}
+
+
+ol {
+    text-align: center;
+    padding: 10px;
+    display: inline;
+}
+
+
+table {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(7, 91, 164);
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+    padding: 25px;
+}
+
+
+
+.cross_line {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 25px 100px;
+    border-color: #FF00FF;
+    border-bottom: 0px;
+    width: 50%;
+}
+
+
+#icon_logo {
+    padding-right: 5px;
+    color: #50abdc;
+}    
+
+
+#logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+
+#special {
+    visibility: hidden;
+}
+
+
+#services {
+    text-align: center;
+}
+
+.subscribe_form {
+    border: 1px rgb(72, 8, 8) solid;
+    display: block;
+    margin: 50px;
+    padding: 0 2em 2em;
+}
+
+input[type=text], input[type=email], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 50%;
+    background-color: #4c8caf;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+  
+input[type=submit]:hover {
+    width: 50%;
+    background-color: #50abdc;
+  }
