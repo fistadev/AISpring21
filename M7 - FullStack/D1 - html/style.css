@@ -153,8 +153,9 @@ img {
 
 
 .cross_line {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     text-align: center;
     margin: 25px 100px;
     border-color: #FF00FF;
