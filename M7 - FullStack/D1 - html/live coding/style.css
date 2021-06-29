@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0
+}
+
+body > div:nth-of-type(2) {
+    margin-top: 9vh;
+}
+
+.monospaced {
+    font-family: monospace
+}
+
+/* .red {
+    color: red
+} */
+
+#image-section {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+#my-span {
+    color: greenyellow
+}
+
+.monospaced.blue {
+    color: blueviolet
+}
+
+.blue {
+    color: rgb(0, 255, 30)
+}
+
+span {
+    color: red
+}
+
+
+p {
+    color: blue;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif', serif;
+}
+
+#skills-section {
+    position: relative;
+    left: 150px;
+
+    width: 20%;
+    background-color: pink;
+    min-height: 50vh;
+
+}
+
+#skills-section ion-icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#navbar {
+    background-color: rgba(111, 111, 129);
+    padding: 1em 0.7em;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 9vh;
+    z-index: 1;
+}
+
+#navbar h3,
+#navbar ul, 
+#navbar li {
+    display: inline
+}
+
+#navbar li {
+    list-style-type: none;
+}
