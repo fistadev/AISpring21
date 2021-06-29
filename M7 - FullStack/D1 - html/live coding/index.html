@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello world</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <h3>My navbar title</h3>
+        <ul>
+            <li>Section One</li>
+            <li>Section Two</li>
+            <li>Section Three</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Hello world</h1>
+        <h2 class="monospaced">Hello world</h2>
+        <h3>Hello world</h3>
+        <h4>Hello world</h4>
+        <h5>Hello world</h5>
+        <h6>Hello world</h6>
+
+    </div>
+    <div>
+
+        <p><span id="my-span" class="monospaced blue">This is a paragraph.</span> Lorem ipsum dolor sit amet
+            consectetur,
+            adipisicing elit. Nostrum repellat nesciunt
+            accusamus esse atque voluptatem harum reprehenderit consequuntur. Eveniet atque ratione incidunt dolores
+            similique repellat iusto doloremque necessitatibus, quod id?</p>
+
+    </div>
+
+    <div id="skills-section">
+        <h3>My Skills</h3>
+        <ion-icon name="add-outline"></ion-icon>
+        <ul>
+            <li class="monospaced">HTML</li>
+            <li>CSS</li>
+            <li class="monospaced">Javascript</li>
+        </ul>
+        <ol>
+            <li class="red monospaced">HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ol>
+    </div>
+
+    <div id="image-section">
+        <img src="https://picsum.photos/200/300" alt='this is just some alt text'>
+    </div>
+
+
+    <div>
+        <a href="https://google.com">Go to Google</a>
+        <a href="#image-section">Go to image section</a>
+    </div>
+
+    <div style='padding:5em 1em'>
+        <form onsubmit="onSubmit(event)">
+            <input type="email" placeholder="Your email address">
+            <input type="password" placeholder="Your pwd">
+            <input type="number" placeholder="Your phone no">
+            <input type="file" placeholder="Your pwd">
+            <input type="text" placeholder="Your pwd">
+            <input type="submit" placeholder="Your pwd">
+        </form>
+    </div>
+
+    <p> this is a p tag and it's aquamarine</p>
+
+    <script>
+        function onSubmit(event) {
+            event.preventDefault()
+            alert("hello world!")
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+</body>
+
+</html>
