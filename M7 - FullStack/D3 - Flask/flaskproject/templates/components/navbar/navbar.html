@@ -1,0 +1,34 @@
+{% macro NavbarComponent(APP_NAME,MENU_ITEMS) %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block">
+                <!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand d-none d-lg-inline-block" href="/"> {{APP_NAME}} </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                <img src="https://via.placeholder.com/40?text=LOGO" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ms-auto flex-nowrap">
+                {% for item in MENU_ITEMS %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/{{item}}">{{item.upper()}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="text-end">
+        <!-- <button type="button" class="btn btn-outline-light me-2">Login</button> -->
+        <button type="button" class="btn btn-outline-warning">Subscribe</button>
+    </div>
+</nav>
+
+{% endmacro %}
