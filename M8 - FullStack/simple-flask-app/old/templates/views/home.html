@@ -1,0 +1,9 @@
+{% extends "/layouts/index.html"%} 
+{% from "/components/jumbotron/jumbotron.html" import JumbotronComponent %}
+{% block title %}
+  Home  
+{% endblock %}
+
+{% block content %}
+    {{ JumbotronComponent()}}
+{% endblock %}

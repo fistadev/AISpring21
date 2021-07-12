@@ -1,0 +1,16 @@
+btn {
+  text-transform: uppercase;
+}
+
+.btn-outline-success {
+  color: chartreuse;
+  border-color: chartreuse;
+}
+
+a {
+  color: pink;
+}
+
+#special_button {
+  border: 2px red solid;
+}
