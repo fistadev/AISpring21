@@ -1,0 +1,13 @@
+{%macro DashboardItem(item)%}
+<a href="{{item['link']}}">
+  <div
+    class="card text-white bg-{{item['variant']}} mb-3"
+    
+  >
+    <div class="card-header">{{item["label"]}}</div>
+    <div class="card-body">
+        {{item["icon"]|safe}}
+    </div>
+  </div>
+</a>
+{%endmacro%}

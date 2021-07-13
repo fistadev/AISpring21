@@ -1,0 +1,4 @@
+files/
+util/__pycache__/db.cpython-38.pyc
+constants/__pycache__/items.cpython-38.pyc
+.env

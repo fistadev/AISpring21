@@ -1,0 +1,45 @@
+{% extends "/layouts/index.html"%} 
+{% from "/components/projects/index.html" import ProjectsListingComponent %}
+
+{% block title %}
+  Projects  
+{% endblock %}
+
+{% block content %}
+   <div class="container"> 
+     <h1 class="mt-4 mb-4">Add New Project </h1>
+      <form action="/dashboard/projects/new" method="POST" enctype="multipart/form">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Project Title</label>
+          <input required name="title" type="text" class="form-control"  placeholder="Project Title">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Project Cover</label>
+          <input required name="cover" type="text" class="form-control"  placeholder="Project Cover">
+        </div>
+       <div class="row">
+         <div class="col">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Project Github Link</label>
+            <input required name="githubLink" type="text" class="form-control"  placeholder="Project Github Link">
+          </div>
+         </div>
+         <div class="col">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Project Live Link</label>
+            <input required name="liveLink" type="text" class="form-control"  placeholder="Project Live Link">
+          </div>
+         </div>
+       </div>
+         
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Project Description</label>
+          <textarea required name="description" type="textarea" rows="3" class="form-control"  placeholder="Project Description"> </textarea>
+        </div>
+        <div class="mb-3">
+           <button type="submit" class="btn btn-secondary">Submit Project</button>
+        </div>
+      </form>
+   </div>
+{% endblock %}
+

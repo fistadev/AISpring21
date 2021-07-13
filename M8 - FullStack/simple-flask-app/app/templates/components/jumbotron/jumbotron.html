@@ -1,0 +1,30 @@
+{%macro JumbotronComponent(SOCIAL_LINKS) -%}
+
+<div class="container">
+  <div class="jumbotron">
+
+    <div class="row h-100">
+      <div class="col col-sm-12 col-md-7 d-flex flex-column justify-content-center">
+       <img class="rounded avatar" src="{{url_for('static', filename='/assets/profile.png')}}"/>
+      <div class="social-links mt-4 d-flex align-items-center justify-content-start">
+        {%for social_link in SOCIAL_LINKS%}
+        <span>
+          <a href="{{social_link['link']}}">{{social_link["icon"]|safe }}</a>
+        </span>
+       {%endfor%}
+      </div>
+      </div>
+      <div class="col col-sm-12 col-md-5 d-flex flex-column align-items-center justify-content-center"> 
+         <h1>
+           Fullstack Developer , Software Engineer.
+         </h1>
+         <p class="home-description">
+           I am a Fullstack Web Developer, who focuses on MERN stack. I build beautiful web applications and API's with Javascript/Typescript.
+         </p>
+
+        
+      </div>
+    </div>
+   </div>
+</div>
+{%-endmacro%}

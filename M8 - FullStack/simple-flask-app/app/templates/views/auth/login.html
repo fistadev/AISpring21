@@ -1,0 +1,28 @@
+{% extends "/layouts/index.html"%} 
+{% from "/components/flash/index.html" import FlashComponent%}
+
+{% block title %}
+  Signup  
+{% endblock %}
+
+{% block content %}
+ 
+   <div class="auth-container">
+    <form action="/login" method="POST">
+        <h2 class="mb-5">Login</h2>
+        {{FlashComponent()}}
+        
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input required name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input required name="password" type="password" class="form-control" id="password">
+        </div>
+        
+        <button type="submit" class="btn btn-light w-100 mb-3">Login</button>
+        <a class="text-light mt-5" href="/signup"> Dont you have an account ? Signup </a>
+      </form>
+   </div>
+{% endblock %}

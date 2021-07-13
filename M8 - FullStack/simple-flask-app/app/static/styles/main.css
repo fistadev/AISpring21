@@ -1,0 +1,154 @@
+:root {
+    --main-bg-color: #0e1117;
+    --main-text-light: #fff;
+    --main-text-primary: #00f68f;
+    
+}
+
+.navbar svg{
+    color:var(--main-text-primary);
+}
+
+.btn-outline-success{
+    background-color:var(--main-bg-color);
+    color:var(--main-text-light);
+}
+.btn-outline-success:hover{
+    background-color:var(--main-text-primary);
+    color:var(--main-bg-color);
+}
+
+.form-control{
+    background-color:transparent;
+}
+
+.form-control:focus{
+    background-color:transparent;
+ 
+}
+
+.navbar{
+    padding-top:50px
+}
+body{
+    background-color:var(--main-bg-color);
+    font-family: 'Montserrat', sans-serif;
+    color:var(--main-text-light);
+    scroll-behavior: smooth;
+}
+ 
+h1,h1,h3,h4,h5,h6{
+    color:var(--main-text-primary);
+}
+h1{
+    font-size:32px;
+    font-weight: bold;
+}
+.avatar{
+    width:320px;
+}
+.jumbotron {
+    background-color:var(--main-bg-color);
+    height:100vh;
+}
+
+.card{
+    background-color:var(--main-bg-color);
+}
+#about{
+    padding-bottom:200px;
+   
+}
+
+#projects{
+    padding-bottom:200px;
+}
+
+.home-jumbotron-container{
+    padding-left:3em;
+    padding-right: 3em;
+}
+.home-description{
+    margin-top:30px
+}
+
+ .social-links{
+     width:100%;
+ 
+ }
+.social-links a {
+    color:var(--main-text-light);
+    padding-right:2em;
+ 
+}
+
+
+.social-links a:hover {
+    color:var(--main-text-primary);
+ 
+}
+
+.social-links svg {
+    transition: 0.2s;
+}
+.social-links svg:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+
+.projects-container{
+    margin-top:15%
+}
+.project-cover{
+    height:230px;
+    object-fit: cover;
+}
+
+.card-footer a {
+    color:var(--main-text-light);
+    margin-right:1em;
+}
+
+.card-footer a:hover {
+    color:var(--main-text-primary);
+    transform: scale(1.5);
+    transition: 0.2s;
+}
+
+.card-body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card-header{
+    text-align: center;
+}
+.card-body i{
+    font-size:48px;
+}
+
+th,td{
+    color:var(--main-text-light);
+}
+
+.auth-container{
+    width:100vw;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.auth-container form{
+    min-width: 320px;
+}
+
+.contact-input {
+    color:white
+}
+
+.contact-input:focus {
+    color:white
+}
+

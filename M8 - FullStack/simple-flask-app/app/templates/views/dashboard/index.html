@@ -1,0 +1,29 @@
+{% extends "/layouts/index.html"%} 
+
+{% from "/components/dashboard/item.html" import DashboardItem%}
+
+{% block title %}
+  Dashboard  
+{% endblock %}
+
+{% block content %}
+ 
+   <div class="container">
+     {%if user%}
+     <div class="d-flex justify-content-between align-items-center">
+      <h1 class="mt-5 mb-5">Hello {{user.get("name")}} 👋🏻</h1>
+      <form method="POST" action="/logout">
+        <button type="submit" class="btn btn-light">Logout</button>
+      </form>
+     </div>
+     {%endif%}
+      <div class="row mt-5">
+        {%for item in DASHBOARD_MENU%}
+        <div class="col">
+          {{DashboardItem(item)}}
+        </div>
+        {%endfor%}
+      </div>
+   </div>
+{% endblock %}
+

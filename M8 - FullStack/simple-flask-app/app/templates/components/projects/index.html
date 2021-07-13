@@ -1,0 +1,12 @@
+{%macro ProjectsListingComponent(projects)%}
+{%from "/components/projects/single.html" import SingleProjectComponent%}
+
+<div id="projects" class="projects-container">
+    <h1 class="mt-4 mb-4">Projects</h1>
+<div class="row row-cols-1 row-cols-md-4 g-4 ">
+    {%for project in projects%}
+    {{ SingleProjectComponent(project)}}
+    {%endfor%}
+  </div>
+</div>
+{%endmacro%}

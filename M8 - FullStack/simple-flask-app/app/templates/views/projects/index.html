@@ -1,0 +1,50 @@
+{% extends "/layouts/index.html"%} 
+
+{% block title %}
+  Projects  
+{% endblock %}
+
+{% block content %}
+ 
+   <div class="container">
+     <h1 class="mt-5">Projects</h1>
+     <div class="d-flex justify-content-end mb-5">
+       <a  href="/dashboard/projects/new" class="btn btn-success"> Add Project</a>
+     </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Cover</th>
+          <th scope="col">Project Title</th>
+          <th scope="col">GitHub Link</th>
+          <th scope="col">Live Link</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {%for project in all_projects%}
+        <tr>
+          <td>
+            <img src={{project.get('cover')}} style="width:64px"/>
+          </td>
+          <td>
+           <a href=/dashboard/projects/{{project.get('id')}}>     {{project.get('title')}}</a>
+          </td>
+          <td>
+            {{project.get('githubLink')}}
+          </td>
+          <td>
+            {{project.get('liveLink')}}
+          </td>
+          <td>
+           <form method="POST" action=/dashboard/projects/{{project.get('id')}}>
+            <button class="btn btn-danger"  type="submit">DELETE</button>
+          </form>
+          </td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+   </div>
+{% endblock %}
+

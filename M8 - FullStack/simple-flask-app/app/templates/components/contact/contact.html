@@ -1,0 +1,29 @@
+{% from "/components/flash/index.html" import FlashComponent%}
+
+{%macro ContactMe()%}
+
+{{FlashComponent()}}
+<form action="/mail" method="POST">
+    <div class="mb-3">
+        <label class="form-label">Topic</label>
+        <select required value="Meeting" type=""  name="topic" class="form-control contact-input" >
+            <option  selected>Meeting</option>
+            <option value="1">Hire me</option>
+            <option value="2">Consult me</option>
+            <option value="3">Offer</option>
+          </select>
+      </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Your Email</label>
+      <input placeholder="youremail@gmail.com" required name="email" type="email" class="form-control contact-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Message</label>
+      <textarea placeholder="Hi Ubeyt! ... " required rows="4" class="form-control contact-input" name="message">
+          </textarea>
+    </div>
+    <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-light w-25">Send</button>
+    </div>
+  </form>
+{% endmacro %}
