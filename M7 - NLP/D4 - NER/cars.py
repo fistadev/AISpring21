@@ -71,7 +71,6 @@ words = [
   "Porsche",
   "Renault",
   "Rolls-Royce",
-  "Rover",
   "Saab",
   "Seat",
   "Skoda",

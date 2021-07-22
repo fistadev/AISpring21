@@ -105,7 +105,7 @@ from spacy.training import Example
 
 # Save the model
 
-output_dir = Path("/ner/")
+output_dir = Path("./models/")
 # nlp.to_disk(output_dir)
 # print("Saved correctly!")
 
