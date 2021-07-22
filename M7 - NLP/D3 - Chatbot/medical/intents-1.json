@@ -1,0 +1,125 @@
+{
+    "intents": [
+    {
+        "tag": "greeting",
+        "patterns": [
+            "Hi",
+            "Hey",
+            "Hello",
+            "Hello Medassitant",
+            "Is anyone there?",
+            "Good day",
+            "Good Morning",
+            "Good afternoon",
+            "Good evening"
+        ],
+        "responses": [
+            "Hi!",
+            "Hello",
+            "How may I be of assitance?",
+            "Hello, thanks for visiting",
+            "Hi there, what can I do for you?",
+            "Hi there, how can I help you?"
+        ]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": [
+            "Bye", 
+            "See you later", 
+            "Goodbye"
+        ],
+        "responses": [
+            "Bye Bye",
+            "See you soon",
+            "Bye, have a good day",
+            "Bye, have a nice day",
+            "See you later, thanks for visiting",
+            "Have a nice day"
+        ]
+    },
+    {
+        "tag": "thanks",
+        "patterns": [
+            "Thanks",
+            "Thank you",
+            "That's helpful",
+            "Thank's a lot!"
+        ],
+        "responses": [
+            "Happy to help!",
+            "No problem!",
+            "Anytime!",
+            "My pleasure"
+        ]
+    },
+    {
+        "tag": "feeling",
+        "patterns": [
+            "I don't feel good",
+            "I'm not doing well",
+            "I'm not feeling well today",
+            "I feel sick"
+        ],
+        "responses": [
+            "Do you have any symptoms?",
+            "What are you experiencing",
+            "What are you suffering from"
+        ]
+    },
+    {
+        "tag": "symptoms",
+        "patterns": [
+            "I have a flu",
+            "I have a cold",
+            "I have a fever",
+            "I have a runny nose",
+            "I have a sore throat",
+            "I have cough and nausia"
+        ],
+        "responses": [
+            "Do you want to book an appointment for tomorrow?",
+            "Would you like to schedule an appointment?",
+            "Would you like to schedule an appointment for tomorrow?"
+        ]
+    },
+    {
+        "tag": "positiveconfirmation",
+        "patterns": [
+            "yes",
+            "yep",
+            "sure",
+            "ok",
+            "okay",
+            "please",
+            "sure thing",
+            "yes please",
+            "okay please"
+        ],
+        "responses": [
+            "Great! I have scheduled an appointment for you",
+            "I have scheduled an appointment for you",
+            "Done",
+            "It's Done",
+            "It's all done",
+        ]
+    }
+    {
+        "tag": "negativeconfirmation",
+        "patterns": [
+            "no",
+            "nope",
+            "not really",
+            "Sorry, I am busy",
+            "I am busy",
+            "I am busy tomorrow",
+            "Maybe another day?"
+        ],
+        "responses": [
+            "Ok! Give me a date and I'll check the availabilites",
+            "Ok, I'll check the availabilities",
+            "When would you like to schedule it?"
+        ]
+    }
+    ]
+}
